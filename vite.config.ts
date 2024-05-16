@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(__dirname,'src/index.html'),
         registration: resolve(__dirname,'src/registration.html'),
         mapView: resolve(__dirname,'src/mapView.html'),
+        mapView2: resolve(__dirname,'src/mapView2.html'),
         gridView: resolve(__dirname, 'src/gridView.html'),
         favoritesPage: resolve(__dirname, 'src/favoritesPage.html'),
         menu: resolve(__dirname,'src/menu.html'),

@@ -19,16 +19,13 @@
       src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
     ></script>
 
-    <link rel="icon" type="image/x-icon" href="/assets/logo.e9ed5f72.ico" />
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkFwcCIsCiAgInNob3J0X25hbWUiOiAiQXBwIiwKICAic3RhcnRfdXJsIjogImluZGV4Lmh0bWwiLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJpY29ucyI6IFt7CiAgICAic3JjIjogImFzc2V0cy9pbWdzL2xvZ28ucG5nIiwKICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICJ0eXBlIjogImltYWdlL3BuZyIKICB9XSwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMzFkNTNkIiwKICAidGhlbWVfY29sb3IiOiAiIzMxZDUzZCIKfQo=" />
-    
+    <link rel="icon" type="image/x-icon" href="./assets/icon/logo.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-    
+    <script type="module" src="./js/main.js"></script>
     <script  src="./js/search.js"></script>
     <meta name="theme-color" content="#31d53d" />
-    <script type="module" crossorigin src="/assets/main.59d65ffb.js"></script>
-    <link rel="stylesheet" href="/assets/main.2eb2e7d6.css">
-    <link rel="stylesheet" href="/assets/style.c568e47e.css">
   </head>
   <body>
     <br>
@@ -39,9 +36,9 @@
           <br>
           <form id="searchid" class="d-flex position-relative py-2 px-4" role="search">
             <input class="form-control me-2" id="searchInput" type="text" placeholder="ex. Estrada's Residence" aria-label="Search">
-            <button id="searchButton" class="btn btn-outline-success" type="submit"><a class="text-dark" style="text-decoration: none;" href="./mapView2.html">Search</a></button>
-            <img src="/assets/img1.1.6cedc3a6.png" width="40px" height="40px">
-            <a href="./gridView.html"><img src="/assets/img2.7d700f1d.png" width="40px" height="40px"></a>
+            <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+            <img src="assets/imgs/img1.1.png" width="40px" height="40px">
+            <a href="./gridView.html"><img src="assets/imgs/img2.png" width="40px" height="40px"></a>
           </form>
         </div>
       </nav>
@@ -66,7 +63,7 @@
       <!-- Map -->
       <div class="container mapp">
         
-        <iframe id="gmap" class="gmap container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31529.1080229801!2d125.59233627787494!3d8.959382972700402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301eb2a8f6a088b%3A0x23b2452e954a9867!2sAmpayon%2C%20Butuan%20City%2C%20Agusan%20Del%20Norte!5e0!3m2!1sen!2sph!4v1713094293965!5m2!1sen!2sph" width="700" height="610"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="gmap" class="gmap container-fluid" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15764.50994608045!2d125.58794081211089!3d8.960398750627913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sboarding%20house%20near%20caraga%20state%20university%20cabadbaran%20campus%20cabadbaran%20city%20agusan%20del%20norte!5e0!3m2!1sen!2sph!4v1715876349695!5m2!1sen!2sph" width="700" height="610"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <!-- End of Map -->
 
@@ -75,15 +72,15 @@
       <!-- Bottom Navbar -->
       <div class="row py-3 d-flex mt-3 fixed-bottom bhbotnav">
         <div class="col-4 align-content-center text-center">
-            <img src="/assets/img4.1.add0a4f5.png" width="40px"><br>
+            <img src="assets/imgs/img4.1.png" width="40px"><br>
             <small id="select"><strong>Explore</strong></small>
         </div>
         <div class="col-4 align-content-center text-center" >
-          <a class="botnav text-dark" href="./favoritesPage.html"><img src="/assets/img5.0efca7c9.png" width="40px"><br>
+          <a class="botnav text-dark" href="./favoritesPage.html"><img src="assets/imgs/img5.png" width="40px"><br>
             <small>Favorites</small></a>
         </div>
         <div class="col-4 align-content-center text-center">
-          <a class="botnav text-dark" href="./menu.html"><img src="/assets/menu1.2c1996d9.png" width="40px"><br>
+          <a class="botnav text-dark" href="./menu.html"><img src="assets/imgs/menu1.png" width="40px"><br>
             <small>Menu</small></a>
         </div>
         
