@@ -1,0 +1,16 @@
+.bg-image{
+    background-image: url(/assets/bg5.484591b4.jpg);
+}
+
+.bg-main,.card{
+    background-color: rgb(232, 235, 233);
+}
+
+#loginbutton:hover{
+    background-color:white;
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+
+}
+#signupbutton:hover{
+    box-shadow: 0 0.5em 2em -0.5em #0d0d0d98;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>StayEasy</title>
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <script type="module"
+    src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+  <script nomodule
+    src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/assets/logo.e9ed5f72.ico" />
+  <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkFwcCIsCiAgInNob3J0X25hbWUiOiAiQXBwIiwKICAic3RhcnRfdXJsIjogImluZGV4Lmh0bWwiLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJpY29ucyI6IFt7CiAgICAic3JjIjogImFzc2V0cy9pbWdzL2xvZ28ucG5nIiwKICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICJ0eXBlIjogImltYWdlL3BuZyIKICB9XSwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMzFkNTNkIiwKICAidGhlbWVfY29sb3IiOiAiIzMxZDUzZCIKfQo=" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  
+  <meta name="theme-color" content="#31d53d" />
+  <script type="module" crossorigin src="/assets/main.59d65ffb.js"></script>
+  <link rel="stylesheet" href="/assets/main.2eb2e7d6.css">
+  <link rel="stylesheet" href="/assets/style.038eb544.css">
+</head>
+
+<body>
+  <br>
+  <!-- Navbar -->
+  <div class="container-fluid ">
+    <nav class="navbar fixed-top bhtopnav">
+      <div class="container-fluid  ">
+        <br>
+        <form class="d-flex position-relative py-2 px-4  " role="search">
+
+          <input class="form-control me-2 text-success" type="search" placeholder="ex. Estrada's Residence"
+            aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          <a href="./mapView.html"><img src="/assets/img1.2c1f1ad2.png" width="40px" height="40px"></a>
+          <img src="/assets/img2.1.1830616b.png" width="40px" height="40px">
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- End of Navbar -->
+
+  <br><br><br>
+  
+  <!-- Header -->
+  <div class="container-fluids pb-2 pt-2">
+    <div class="container">
+      <div class="container-fluid  text-left">
+        <div class="pb-3">
+          <h1>Locate your next <br>Boarding House! </h1>
+          <small class="float-end text-secondary">Grid View</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- End of Header -->
+
+  <!-- Grid View contents code here -->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row gy-3">
+          <!-- bh1 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5 ">
+              <img src="/assets/bh1.3bc8e0d4.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Ronquillo Boarding House</h5>
+                <img id="bill" src="/assets/group.e6ee774c.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <img id="bill" src="/assets/wifi.4f23e25e.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end"  src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh1.html" class="btn btn-success ">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+          <!-- bh2 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5">
+              <img src="/assets/bh2.f534ebc5.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Monter Boarding House</h5>
+                <img id="bill" src="/assets/single.ba723a4b.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end"  src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh2.html" class="btn btn-success">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+          <!-- bh3 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5">
+              <img src="/assets/bh3.be6cbf6e.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Tantoy’s Boarding House</h5>
+                <img id="bill" src="/assets/group.e6ee774c.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <img id="bill" src="/assets/wifi.4f23e25e.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end"  src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh3.html" class="btn btn-success">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+          <!-- bh 4 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5">
+              <img src="/assets/bh4.73647cf4.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Ablanque's Boarding House</h5>
+                <img id="bill" src="/assets/single.ba723a4b.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <img id="bill" src="/assets/wifi.4f23e25e.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end" src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh4.html" class="btn btn-success">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+          <!-- bh5 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5">
+              <img src="/assets/bh5.2224669f.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Licayan Boarding House</h5>
+                <img id="bill" src="/assets/single.ba723a4b.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <img id="bill" src="/assets/wifi.4f23e25e.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end" src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh5.html" class="btn btn-success viewbutton">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+          <!-- bh6 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5">
+              <img src="/assets/bh6.8339eb61.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Mi amor Boarding house</h5>
+                <img id="bill" src="/assets/group.e6ee774c.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end" src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh6.html" class="btn btn-success">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+          <!-- bh7 -->
+          <div class="col-md-4 ">
+            <div class="card gridbh mb-5 ">
+              <img src="/assets/bh7.f3e33f59.jpg" class="card-img-top" width="300vh" height="300vh">
+              <div class="card-body">
+                <h5 class="card-title">Magdura Boarding House</h5>
+                <img id="bill" src="/assets/group.e6ee774c.png" width="15px">
+                <img id="bill" src="/assets/light.987d382c.png" width="15px">
+                <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
+                <img id="bill" src="/assets/wifi.4f23e25e.png" width="15px">
+                <br><br>
+                <img class="heart-icon float-end" src="/assets/heart3.c4557277.png" width="25px">
+                <a href="./bh7.html" class="btn btn-success">View House</a>
+                <span><small class="float text-center pt-5">  999/month</small></span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- end of grid view contents -->
+
+  <br><br><br><br><br>
+
+  <!-- Bottom Navbar -->
+  <div class="row py-3 d-flex fixed-bottom bhbotnav">
+    <div class="col-4 align-content-center text-center">
+      <img src="/assets/img4.1.add0a4f5.png" width="40px"><br>
+      <small id="select"><strong>Explore</strong></small>
+    </div>
+    <div class="col-4 align-content-center text-center">
+      <a class="botnav text-dark" href="./favoritesPage.html"><img src="/assets/img5.0efca7c9.png" width="40px"><br>
+        <small>Favorites</small></a>
+    </div>
+    <div class="col-4 align-content-center text-center">
+      <a class="botnav text-dark" href="./menu.html"><img src="/assets/menu1.2c1996d9.png" width="40px"><br>
+        <small>Menu</small></a>
+    </div>
+  </div>
+  <!-- End of Bottom Navbar -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

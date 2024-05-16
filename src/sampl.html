@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heart Image Toggle</title>
+  <script>
+    function toggleHeart() {
+      var heartImage = document.getElementById('heartImage');
+      var currentSrc = heartImage.getAttribute('src');
+      
+      if (currentSrc.includes('./assets/imgs/heart3.png')) {
+        heartImage.setAttribute('src', './assets/imgs/heart4.png');
+      } else {
+        heartImage.setAttribute('src', './assets/imgs/heart3.png');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Heart Image Toggle</h1>
+  <img id="heartImage" src="./assets/imgs/heart3.png" alt="Hollow Heart" width="25px"  class="float-end" onclick="toggleHeart()">
+</body>
+</html>
