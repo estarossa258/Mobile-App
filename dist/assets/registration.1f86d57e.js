@@ -24,7 +24,7 @@ form_register.onsubmit = async (e) => {
         }
       ]).select();
       if (error2 == null) {
-        successNotification("Registered Successfully  <a href='./index.html'>Click here to login! </a>", 15);
+        successNotification("Registered Successfully! Please confirm your email before logging in", 15);
       } else {
         errorNotification("Something wrong happened. Cannot register account.", 5);
         console.log(error2);

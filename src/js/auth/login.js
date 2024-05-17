@@ -42,9 +42,7 @@ form_login.onsubmit = async (e) => {
 
     // Redirect to dashboard
     window.location.pathname = "/mapView.html";
-  } else if (error.message == "Invalid login credentials") {
-    errorNotification("Incorrect Email. Cannot login account.", 3);
-  } else {
+  }  else {
     errorNotification("Incorrect Password. Cannot login account.", 3);
     console.log(error);
   }
