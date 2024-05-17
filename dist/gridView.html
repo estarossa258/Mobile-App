@@ -21,11 +21,48 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   
-  <script  src="./js/likes.js"></script>
+  <script>
+    function toggleHeart(cardId) {
+      var heartIcon = document.getElementById('heartIcon-' + cardId);
+      var fullHeartSrc = './css/heart4.png';
+      var hollowHeartSrc = './css/heart3.png';
+      
+      // Get the current state from local storage
+      var isHeartFull = localStorage.getItem('heartState-' + cardId) === 'true';
+    
+      if (isHeartFull) {
+        heartIcon.setAttribute('src', hollowHeartSrc);
+        // Update the state in local storage
+        localStorage.setItem('heartState-' + cardId, 'false');
+      } else {
+        heartIcon.setAttribute('src', fullHeartSrc);
+        // Update the state in local storage
+        localStorage.setItem('heartState-' + cardId, 'true');
+      }
+    }
+    
+    // Restore the heart states on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Loop through the heart icons
+      var heartIcons = document.querySelectorAll('.heart-icon');
+      heartIcons.forEach(function(heartIcon) {
+        var cardId = heartIcon.id.split('-')[1];
+        var isHeartFull = localStorage.getItem('heartState-' + cardId) === 'true';
+    
+        // Set the heart icon source based on the stored state
+        if (isHeartFull) {
+          heartIcon.setAttribute('src', './css/heart4.png');
+        } else {
+          heartIcon.setAttribute('src', './css/heart3.png');
+        }
+      });
+    });
+  </script>
+
   <meta name="theme-color" content="#31d53d" />
-  <script type="module" crossorigin src="/assets/main.59d65ffb.js"></script>
+  <script type="module" crossorigin src="/assets/main.b96cb45f.js"></script>
   <link rel="stylesheet" href="/assets/main.2eb2e7d6.css">
-  <link rel="stylesheet" href="/assets/style.c568e47e.css">
+  <link rel="stylesheet" href="/assets/style.85c96fb8.css">
 </head>
 
 <body>
@@ -79,9 +116,11 @@
                 <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
                 <img id="bill" src="/assets/wifi.4f23e25e.png" width="15px">
                 <br><br>
-                <img id="heartIcon-1" src="/assets/heart3.c4557277.png" width="25px" class="heart-icon float-end " data-full="false" onclick="toggleHeart(1)">
+                <!-- <img id="heartIcon-1" width="25px"  class="heart-icon float-end "  onclick="toggleHeart(1)"> -->
+                <div class="box float-end"></div>
                 <a href="./bh1.html" class="btn btn-success ">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
+                
               </div>
             </div>
           </div>
@@ -95,7 +134,7 @@
                 <img id="bill" src="/assets/light.987d382c.png" width="15px">
                 <img id="bill" src="/assets/water.5a7eef39.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end"  src="/assets/heart3.c4557277.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh2.html" class="btn btn-success">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>

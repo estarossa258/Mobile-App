@@ -21,7 +21,44 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <script type="module" src="./js/main.js"></script>
-  <script  src="./js/likes.js"></script>
+  <script>
+    function toggleHeart(cardId) {
+      var heartIcon = document.getElementById('heartIcon-' + cardId);
+      var fullHeartSrc = './css/heart4.png';
+      var hollowHeartSrc = './css/heart3.png';
+      
+      // Get the current state from local storage
+      var isHeartFull = localStorage.getItem('heartState-' + cardId) === 'true';
+    
+      if (isHeartFull) {
+        heartIcon.setAttribute('src', hollowHeartSrc);
+        // Update the state in local storage
+        localStorage.setItem('heartState-' + cardId, 'false');
+      } else {
+        heartIcon.setAttribute('src', fullHeartSrc);
+        // Update the state in local storage
+        localStorage.setItem('heartState-' + cardId, 'true');
+      }
+    }
+    
+    // Restore the heart states on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Loop through the heart icons
+      var heartIcons = document.querySelectorAll('.heart-icon');
+      heartIcons.forEach(function(heartIcon) {
+        var cardId = heartIcon.id.split('-')[1];
+        var isHeartFull = localStorage.getItem('heartState-' + cardId) === 'true';
+    
+        // Set the heart icon source based on the stored state
+        if (isHeartFull) {
+          heartIcon.setAttribute('src', './css/heart4.png');
+        } else {
+          heartIcon.setAttribute('src', './css/heart3.png');
+        }
+      });
+    });
+  </script>
+
   <meta name="theme-color" content="#31d53d" />
 </head>
 
@@ -76,9 +113,11 @@
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <img id="bill" src="assets/imgs/wifi.png" width="15px">
                 <br><br>
-                <img id="heartIcon-1" src="assets/imgs/heart3.png" width="25px" class="heart-icon float-end " data-full="false" onclick="toggleHeart(1)">
+                <!-- <img id="heartIcon-1" width="25px"  class="heart-icon float-end "  onclick="toggleHeart(1)"> -->
+                <div class="box float-end"></div>
                 <a href="./bh1.html" class="btn btn-success ">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
+                
               </div>
             </div>
           </div>
@@ -92,7 +131,7 @@
                 <img id="bill" src="assets/imgs/light.png" width="15px">
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end"  src="./assets/imgs/heart3.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh2.html" class="btn btn-success">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>
@@ -109,7 +148,7 @@
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <img id="bill" src="assets/imgs/wifi.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end"  src="./assets/imgs/heart3.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh3.html" class="btn btn-success">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>
@@ -126,7 +165,7 @@
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <img id="bill" src="assets/imgs/wifi.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end" src="./assets/imgs/heart3.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh4.html" class="btn btn-success">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>
@@ -143,7 +182,7 @@
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <img id="bill" src="assets/imgs/wifi.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end" src="./assets/imgs/heart3.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh5.html" class="btn btn-success viewbutton">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>
@@ -159,7 +198,7 @@
                 <img id="bill" src="assets/imgs/light.png" width="15px">
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end" src="./assets/imgs/heart3.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh6.html" class="btn btn-success">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>
@@ -176,7 +215,7 @@
                 <img id="bill" src="assets/imgs/water.png" width="15px">
                 <img id="bill" src="assets/imgs/wifi.png" width="15px">
                 <br><br>
-                <img class="heart-icon float-end" src="./assets/imgs/heart3.png" width="25px">
+                <div class="box float-end"></div>
                 <a href="./bh7.html" class="btn btn-success">View House</a>
                 <span><small class="float text-center pt-5">  999/month</small></span>
               </div>

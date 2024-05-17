@@ -1,0 +1,165 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+/* .mapp{
+  background-image: url(img3.png);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 100% 100%;
+} */
+
+
+.botnav{
+  text-decoration: none;
+  
+}
+
+.box {
+  
+  width: 0;
+  height: 0;
+  border-top: 30px solid rgb(253, 253, 253);
+  border-right: 30px solid transparent;
+  background-color: rgb(172, 167, 167);
+  transition: background-color 0.5s ease;
+}
+
+.box.clicked {
+  background-color: rgb(63, 157, 88);
+}
+
+
+.bh, .gridbh{
+  border-style: solid ;
+    border-color: rgb(75, 75, 80);
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+    /* height:  320px; */
+    /* margin-top: 100px; */
+    /* width: 600px; */
+    /* background: #fff; */
+	border: 1px solid #B8AEAE;
+	position: relative;
+	text-align: left;
+	/* margin:80px auto; */
+	/* margin: 20px 75px 2em 75px; */
+	max-width: 550px;
+	box-shadow: 1px 5px 23px #5F5C5C;
+	-moz-box-shadow:1px 5px 23px #5F5C5C;
+	-webkit-box-shadow:1px 5px 23px #5F5C5C;
+}
+.bhtopbg{
+  background-color: #FFFFFF;
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #f3f3f3 50%, #378e3b 100%);  
+}
+
+.bhbotnav{
+background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #f0f1f5 86%, #378e3b 100%);
+}
+
+.bhtopnav{
+  background-color: #FFFFFF;
+background-image: linear-gradient(0deg, #FFFFFF 0%, #f0f1f5 86%, #378e3b 100%);
+}
+
+.favtop{
+  background-color: #378e3b;
+}
+
+.contactnav{
+  background-color: #f0f1f5;
+background-image: linear-gradient(0deg, #f0f1f5 0%, #FFFFFF 1%, #378e3b 100%);
+}
+
+#select{
+  text-shadow: 1px 1px 11px rgba(20, 122, 7, 0.71);
+  
+}
+/* .viewbutton{
+  color: #091b0a;
+} */
+
+
+/*<!-- HTML !-->*/
+
+
+/* CSS */
+.button-88 {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgb(39, 133, 66) 0%, rgb(54, 230, 69) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: auto;
+}
+
+.button-88:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-88:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+#btn_logout,#buttons{
+  text-decoration: none;
+}
+
+/* For like */
+
+
+/* <button class="button-35" role="button">Button 35</button> */
+
+/* CSS */
+.button-35 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* #gmap{
+  filter: invert(100%);
+} */
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}

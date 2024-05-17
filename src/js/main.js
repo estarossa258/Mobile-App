@@ -45,4 +45,27 @@ function errorNotification(message, seconds = 0) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  var boxes = document.querySelectorAll('.box');
+
+  // Iterate over each box
+  boxes.forEach(function(box, index) {
+    // Check if the clicked state is stored in localStorage
+    var isClicked = localStorage.getItem('boxClicked-' + index);
+    if (isClicked === 'true') {
+      box.classList.add('clicked');
+    }
+
+    // Add click event listener to the box
+    box.addEventListener('click', function() {
+      box.classList.toggle('clicked');
+
+      // Store the clicked state in localStorage
+      var isClicked = box.classList.contains('clicked');
+      localStorage.setItem('boxClicked-' + index, isClicked);
+    });
+  });
+});
+
+
 export { supabase, successNotification, errorNotification };
